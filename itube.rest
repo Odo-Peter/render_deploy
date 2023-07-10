@@ -1,0 +1,110 @@
+POST http://localhost:3001/api/users HTTP/1.1
+content-type: application/json
+
+{
+	"firstname": "Odo",
+	"lastname": "Peter",
+	"username": "Odopeter",
+	"password": "123456",
+	"options": [ 
+		{
+			"icon": "<FaHome />",
+			"id": "1",
+			"name": "Education",
+			"value": "trending education channels videos"
+		},
+
+		{
+			"icon": "<HiMusicNote />",
+			"id": "2",
+			"name": "Hip Hop",
+			"value": "trending hip hop music videos"
+		},
+		{
+			"icon": "<HiMusicNote />",
+			"id": "2",
+			"name": "Drill",
+			"value": "trending drill music videos"
+		},
+
+		{
+			"icon": "<GiGamepad />",
+			"id": "3",
+			"name": "God of War",
+			"value": "god of war gameplay"
+		},
+
+		{
+			"icon": "<GiGamepad />",
+			"id": "3",
+			"name": "Car Race",
+			"value": "car race games gameplay"
+		},
+
+		{
+			"icon": "<MdOndemandVideo />",
+			"id": "4",
+			"name": "One Piece",
+			"value": "one piece anime"
+		},
+
+		{
+			"icon": "<MdOndemandVideo />",
+			"id": "4",
+			"name": "AOT",
+			"value": "attack on titans anime"
+		},
+
+		{
+			"icon": "<MdCode />",
+			"id": "5",
+			"name": "Game Dev",
+			"value": "game development coding videos"
+		},
+
+		{
+			"icon": "<MdCode />",
+			"id": "5",
+			"name": "Web Dev",
+			"value": "web development coding videos"
+		},
+
+		{
+			"icon": "<FaUserGraduate />",
+			"id": "6",
+			"name": "Trending'",
+			"value": "trending education channels videos"
+		},
+
+		{
+			"icon": "<FaUserGraduate />",
+			"id": "6",
+			"name": "Khan Academy",
+			"value": "popular khan academy videos"
+		},
+
+		{
+			"icon": "<MdPersonalVideo />",
+			"id": "7",
+			"name": "Crime",
+			"value": "popular crime movies trailers"
+		},
+
+		{
+			"icon": "<MdPersonalVideo />",
+			"id": "7",
+			"name": "Trending",
+			"value": "trending box office movies trailers"
+		}
+	]
+}
+
+###
+POST http://localhost:3001/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username" : "Odopeter",
+    "password": "123456"
+}
+
