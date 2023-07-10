@@ -9,6 +9,7 @@ const userRouter = require('./controllers/users');
 const loginRouter = require('./controllers/login');
 const middleware = require('./utils/middleware');
 
+app.use(express.static('build'));
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
